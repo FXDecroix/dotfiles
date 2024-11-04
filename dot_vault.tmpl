@@ -1,5 +1,5 @@
 {{- if eq .hostname "vivacitylaptops-MacBook-Pro.local" -}}
-  {{- $repos := printf "%s/vivacity" (env "HOME") -}}
+  {{- $repos := printf "%s/dev/vivacitylabs" (env "HOME") -}}
 
 token_helper = {{ printf "\"%s/atrocity/certs/vault-token-helper.sh\"" $repos }}
 {{ end -}}
