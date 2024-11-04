@@ -1,14 +1,10 @@
-{{- if eq .hostname "pc-vivacity-pl" "blastoise" -}}
+{{- if eq .hostname "vivacitylaptops-MacBook-Pro.local" -}}
 
 # Go
 export GOPRIVATE="github.com/vivacitylabs/*"
 
 # VivaCity repos
-{{- if eq .hostname "blastoise" }}
-export REPOS="$HOME/dev/GitHub/vivacitylabs"
-{{- else if eq .hostname "pc-vivacity-pl"  }}
-export REPOS="$HOME/dev/vivacitylabs"
-{{- end }}
+export REPOS="$HOME/vivacity"
 
 # gcloud <> GKE integration
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True

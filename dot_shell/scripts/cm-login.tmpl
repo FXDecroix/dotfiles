@@ -14,6 +14,6 @@ export BW_SESSION="$(unlock)"
 echo "> Log in to 1Password"
 eval $(op signin --account my.1password.com)
 
-{{ if eq .chezmoi.hostname "pc-vivacity-pl" "blastoise" -}}
+{{ if eq .chezmoi.hostname "vivacitylaptops-MacBook-Pro.local" -}}
 eval $(op signin --account vivacitylabs.1password.com)
 {{- end }}
